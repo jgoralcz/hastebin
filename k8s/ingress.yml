@@ -16,7 +16,7 @@ spec:
               service:
                 name: ${SERVICE_NAME}
                 port:
-                  number: ${PORT}
+                  number: 7777
   tls:
     - hosts:
         - ${HOST_URL}
