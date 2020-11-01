@@ -62,7 +62,7 @@ jobs:
           && envsubst < k8s/ingress.yml | kubectl apply -f - \
           && envsubst < k8s/service.yml | kubectl apply -f - \
           && envsubst < k8s/deployment.yml | kubectl apply -f - \
-          && kubectl rollout restart deployment/${{ env.SERVICE_NAME}} || echo "deployment/${{ env.SERVICE_NAME}} failed to deploy"
+          && kubectl rollout restart deployment/${{ env.SERVICE_NAME}}
         env:
           ENV: ${{ steps.extract_environment_uppercase.outputs.env_uppercase }}
           IMAGE_LOCATION: rlister/hastebin
