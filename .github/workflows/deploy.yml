@@ -67,7 +67,7 @@ jobs:
           ENV: ${{ steps.extract_environment_uppercase.outputs.env_uppercase }}
           IMAGE_LOCATION: rlister/hastebin
           SERVICE_NAME: ${{ steps.extract_prefix.outputs.prefix }}${{ steps.extract_service.outputs.service }}
-          PORT: 8443
+          PORT: 7777
           PREFIX: ${{ steps.extract_prefix.outputs.prefix }}
           HOST_URL: ${{ steps.extract_prefix.outputs.prefix }}${{ secrets.HOST_URL }}
           CPU_LIMIT: ${{ steps.cpu_limit.outputs.limit }}
