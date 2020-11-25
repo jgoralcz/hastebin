@@ -22,7 +22,7 @@ spec:
             - name: STORAGE_TYPE
               value: "file"
             - name: MAX_LENGTH
-              value: 1000000
+              value: "1000000"
           resources:
             limits:
               cpu: ${CPU_LIMIT}
