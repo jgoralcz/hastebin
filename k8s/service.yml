@@ -5,7 +5,7 @@ metadata:
   namespace: josh-apps
 spec:
   ports:
-    - targetPort: ${PORT}
+    - targetPort: 7777
       port: 7777
   selector:
     app: ${SERVICE_NAME}
